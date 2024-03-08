@@ -14,8 +14,7 @@ pipeline {
       }
     }
     stage('Deploy') {
-      steps {    
-        sh 'nonexistent_command' // Intentional Error
+      steps {            
         echo 'Successfully deployed!'
       }
     }
