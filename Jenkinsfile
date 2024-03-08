@@ -21,6 +21,7 @@ pipeline {
   }
   post {
     failure {
+      sh 'nonexistent_command' // Intentional Error
       echo 'Pipeline Failed!'
     }
   }
